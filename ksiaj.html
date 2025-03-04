@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .profile-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            pointer-events: none; /* Disable interactions */
+            user-drag: none;
+            user-select: none;
+        }
+
+        /* Prevent Right Click */
+        img {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 3px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Hide image during print */
+        @media print {
+            .profile-image img {
+                display: none;
+            }
+        }
+    </style>
+
+    <script>
+        // Disable Right-Click on the entire page
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Block PrintScreen key
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "PrintScreen") {
+                navigator.clipboard.writeText("");
+                alert("Screenshots are disabled.");
+            }
+            if (e.ctrlKey && e.key === "s") { // Disable Save As
+                e.preventDefault();
+                alert("Saving images is disabled.");
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Profile</h1>
+    </header>
+
+    <div class="container">
+        <h2>Profile Picture</h2>
+        <div class="profile-image">
+            <!-- Replace the src with base64-encoded image data to prevent downloads -->
+        <img src="C:\Users\I11-13\Downloads\3b4d2dcc-99e2-48d3-ac79-2adee389d495.JPG" alt="Profile Picture">
+
+        </div>
+
+        <h2>Information</h2>
+        <div class="student-info">
+            <div>
+                <h3>Name:</h3>
+                <p>Kisha Cicily.S</p>
+            </div>
+            <div>
+                <h3>Age:</h3>
+                <p>19</p>
+            </div>
+            <div>
+                <h3>Gender:</h3>
+                <p>Female</p>
+            </div>
+        </div>
+
+        <div class="student-info">
+            <div>
+                <h3>University:</h3>
+                <p>Loyola I-cam College of Engineering And Technology</p>
+            </div>
+            <div>
+                <h3>Major:</h3>
+                <p>BE Computer Science</p>
+            </div>
+            <div>
+                <h3>Year:</h3>
+                <p>First Year</p>
+            </div>
+        </div>
+
+        <h2>Contact Information</h2>
+        <div class="student-info">
+            <div>
+                <h3>Email:</h3>
+                <p>kishacicily.28csb@licet.ac.in</p>
+            </div>
+            <div>
+                <h3>Phone:</h3>
+                <p>9003098821</p>
+            </div>
+        </div>
+
+        <h2>Skills & Interests</h2>
+        <ul>
+            <li>Programming in Python</li>
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Machine Learning and AI</li>
+            <li>Photography</li>
+            <li>Gaming</li>
+            <p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+        </ul>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; Kisha Cicily 24-28</p>
+    </footer>
+
+</body>
+
+</html>
