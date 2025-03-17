@@ -1,1 +1,1 @@
-This is a static webpage created by me which is primarily done using html.The key feure of this webpage is that the imae in the profile picture cannot be downloaded,printed ,saved and screenshoted for security reasons.
+This is a static webpage created by me which is primarily done using html.The key feature of this webpage is that the image in the profile picture cannot be downloaded,printed ,saved and screenshoted for security reasons.This webpage consists of all basic information about myself.
